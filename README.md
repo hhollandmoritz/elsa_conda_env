@@ -20,7 +20,7 @@ Call on the ELSA script of your choice.
 
 For example the test script
 ```bash
-cd charade_elsa_xxxxxxx # replace x's with those in your folder
+cd elsa # replace x's with those in your folder
 lsa_compute ../test/ARISA20.csv ../test/ARISA20.lsa -r 1 -s 127 -d 3 -p theo -x 1000 -f linear -n percentileZ -e ../test/ARISA20.csv -m 0
 ```
 
