@@ -12,7 +12,7 @@ conda activate $ENV_NAME
 # Download ELSA and unzip
 echo "Downloading ELSA master branch"
 wget https://bitbucket.org/charade/elsa/get/master.tar.gz
-tar -zxvf charade-elsa-master.tar.gz
+tar -zxvf master.tar.gz
 
 cd charade-elsa*
 
