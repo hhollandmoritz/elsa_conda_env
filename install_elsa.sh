@@ -9,12 +9,8 @@ source $(conda info --base)/etc/profile.d/conda.sh
 ENV_NAME=$(awk '/name: elsa_env_v/{print $NF}' elsa_install.yml)
 conda activate $ENV_NAME
 
-# Download ELSA and unzip
-echo "Downloading ELSA master branch"
-wget https://bitbucket.org/charade/elsa/get/master.tar.gz
-tar -zxvf master.tar.gz
-
-cd charade-elsa*
+# Install elsa
+cd elsa
 
 # Install ELSA
 echo "Installing ELSA"
