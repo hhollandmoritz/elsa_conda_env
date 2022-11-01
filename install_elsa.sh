@@ -17,11 +17,12 @@ echo "Installing ELSA"
 python setup.py install
 
 # Make sure ssa.py ends up in correlct location since setup.py doesn't appear to do it correctly
+cd lsa
 cp ssa.py $HOME/.conda/envs/elsa_env_v0.1/bin/ # ASSUMES THAT conda environments are stored in $HOME
 
 # Test installation
 echo "Testing installation"
-cd test
+cd ../test
 ./test.sh
  
 # Deactivate the conda environment
